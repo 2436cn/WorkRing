@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkRing - Privacy Policy (隐私政策 / プライバシーポリシー)</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --text-color: #1d1d1f;
+            --card-bg: #ffffff;
+            --border-color: #e5e5ea;
+            --accent-color: #0071e3;
+            --sub-color: #86868b;
+            --tag-bg: rgba(0, 113, 227, 0.08);
+            --tag-text: #0071e3;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-color: #f5f5f7;
+                --card-bg: #1c1c1e;
+                --border-color: #38383a;
+                --accent-color: #2997ff;
+                --sub-color: #a1a1a6;
+                --tag-bg: rgba(41, 151, 255, 0.15);
+                --tag-text: #2997ff;
+            }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "PingFang SC", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 44px 52px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+        .lang-switch {
+            display: inline-flex;
+            background: var(--bg-color);
+            border-radius: 10px;
+            padding: 3px;
+            border: 1px solid var(--border-color);
+        }
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 8px;
+            color: var(--sub-color);
+            transition: all 0.2s ease;
+        }
+        .lang-btn.active {
+            background: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.6px;
+            margin: 0 0 8px 0;
+        }
+        .subtitle {
+            color: var(--sub-color);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            color: var(--accent-color);
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-color);
+        }
+        ul {
+            padding-left: 22px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: var(--tag-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background: var(--bg-color);
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 13px;
+            border: 1px solid var(--border-color);
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--sub-color);
+            text-align: center;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <span class="badge">🛡️ Apple App Store Compliant · Privacy First</span>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-zh" onclick="switchLang('zh')">简体中文</button>
+                <button class="lang-btn" id="btn-en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" id="btn-ja" onclick="switchLang('ja')">日本語</button>
+            </div>
+        </div>
+
+        <!-- 1. 中文版内容 -->
+        <div id="content-zh" class="lang-content active">
+            <h1>WorkRing 隐私政策</h1>
+            <div class="subtitle">生效日期：2026年10月20日 | 最近更新：2026年10月20日</div>
+
+            <div class="highlight-box">
+                <strong>核心承诺：</strong> WorkRing 是一款 100% 运行于本地的 macOS 效率导航工具。我们不收集个人身份信息、不记录按键敲击、不上传屏幕画面，亦无外部数据追踪。
+            </div>
+
+            <p>欢迎使用 <strong>WorkRing</strong>（以下简称“我们”或“本应用”）。我们深知个人隐私对您的重要性，本政策向您详细说明本应用在数据收集、处理、敏感权限使用及存储方面的做法与合规规范。</p>
+
+            <h2>一、 数据收集与“零隐私上报”原则</h2>
+            <ul>
+                <li><strong>零个人可识别信息收集</strong>：本应用不收集您的姓名、电话、电子邮件、通讯录、物理位置或硬件设备序列号。</li>
+                <li><strong>零击键与输入内容记录</strong>：本应用虽响应全局快捷键以唤出动作轮盘，但绝不监听、记录、存储或分析您键入的任何文字、密码或剪贴板隐私。</li>
+                <li><strong>零屏幕像素外发与云端分析</strong>：内置的“区域截图”与“全屏截图”功能完全依赖本地 macOS 原生 API 完成图像截取，图像数据直接存入系统剪贴板，绝无任何向第三方服务器外发的行为。</li>
+                <li><strong>零第三方网络追踪探针</strong>：本应用未集成任何第三方分析、广告归因 SDK（如 Google Analytics、Firebase Analytics 或友盟等），彻底实现纯净闭环。</li>
+            </ul>
+
+            <h2>二、 系统敏感权限申请与使用目的说明</h2>
+            <p>为了在 macOS 上提供流畅的径向动作轮盘体验，本应用会在必要时向您申请以下系统权限。所有权限均遵循苹果官方规范，必须由您在系统设置中主动授予后方可生效：</p>
+            <ul>
+                <li><strong>辅助功能权限 (Accessibility API)</strong>：
+                    <br><em>使用目的</em>：作为精细操作疲劳（RSI）与高效多任务切换的辅助导航技术，用于向您指定的当前活跃窗口分发动作快捷键，以及响应鼠标中键/侧键的一键呼出指令。
+                    <br><em>合规说明</em>：完全在本地沙盒环境中受控调用，绝不探测或枚举不相关的系统后台窗口。
+                </li>
+                <li><strong>屏幕录制权限 (Screen Recording)</strong>：
+                    <br><em>使用目的</em>：仅当您在动作轮盘中主动点击触发“区域截图”或“全屏截图”功能时，系统用于捕获指定显示区域的像素。
+                    <br><em>合规说明</em>：严禁任何后台静默录制、定时截屏或任何形式的云端回传。
+                </li>
+            </ul>
+
+            <h2>三、 本地数据存储与数据删除</h2>
+            <ul>
+                <li><strong>存储位置</strong>：您的自定义轮盘方案、快捷键映射与应用偏好设置仅存储于您 Mac 本地设备中：
+                    <br><code>~/Library/Application Support/WorkRing/</code>
+                </li>
+                <li><strong>自主删除</strong>：您可随时在应用设置中重置轮盘或删除应用专属方案。当您从 macOS 中彻底删除本应用及其数据目录时，所有本地配置将被永久抹除。</li>
+            </ul>
+
+            <h2>四、 应用内购买与 Apple StoreKit</h2>
+            <p>WorkRing Pro 高级功能全部通过 Apple 官方应用内购买（In-App Purchase / StoreKit 2）完成。交易流程由 Apple Inc. 统一加密托管，开发者无法亦不需要获知您的信用卡、银行账户或账单地址等敏感财务信息。</p>
+
+            <h2>五、 官方隐私清单 (PrivacyInfo.xcprivacy)</h2>
+            <p>根据 Apple 官方规定，本应用在安装包内完整配置了官方标准 <code>PrivacyInfo.xcprivacy</code> 隐私清单，声明 <code>NSPrivacyTracking = false</code>，无任何受限指纹收集 API。</p>
+
+            <h2>六、 联系方式</h2>
+            <p>若您对本隐私政策或数据安全有任何疑问，请随时与我们联系：</p>
+            <ul>
+                <li><strong>技术支持与客服邮箱</strong>：<a href="mailto:worktabs@outlook.com">worktabs@outlook.com</a></li>
+                <li><strong>GitHub 仓库</strong>：<a href="https://github.com/2436cn/WorkRing" target="_blank">https://github.com/2436cn/WorkRing</a></li>
+            </ul>
+
+            <footer>
+                &copy; 2026 WorkRing Studio. 保留所有权利。<br>
+                遵循 Apple App Store Review Guideline 5.1.1(i) 与 3.1.2 合规准则。
+            </footer>
+        </div>
+
+        <!-- 2. 英文版内容 (English Version) -->
+        <div id="content-en" class="lang-content">
+            <h1>WorkRing Privacy Policy</h1>
+            <div class="subtitle">Effective Date: October 20, 2026 | Last Updated: October 20, 2026</div>
+
+            <div class="highlight-box">
+                <strong>Core Commitment:</strong> WorkRing is a 100% on-device macOS productivity and assistive navigation tool. We do not collect personal data, log keystrokes, capture background screen contents, or track your activities online.
+            </div>
+
+            <p>Welcome to <strong>WorkRing</strong> ("we", "us", or "our application"). We take user privacy and data security very seriously. This Privacy Policy describes how WorkRing handles information, permissions, and local storage on macOS.</p>
+
+            <h2>1. Zero Data Collection & On-Device Processing</h2>
+            <ul>
+                <li><strong>Zero Personally Identifiable Information (PII)</strong>: We do not collect names, phone numbers, email addresses, contact lists, GPS locations, or unique hardware identifiers.</li>
+                <li><strong>Zero Keystroke Logging</strong>: While the app registers global hotkeys to summon the radial menu, it never logs, monitors, stores, or analyzes what you type, passwords, or clipboard history.</li>
+                <li><strong>Zero Screen Telemetry or Cloud Uploads</strong>: The built-in "Area Screenshot" and "Full Screen Capture" features rely entirely on macOS native APIs. Screen pixel data is copied directly to your system clipboard for immediate pasting and is never uploaded anywhere.</li>
+                <li><strong>Zero Third-Party Analytics or Trackers</strong>: WorkRing contains no third-party tracking or advertising SDKs (e.g., Google Analytics, Firebase, or telemetry beacons).</li>
+            </ul>
+
+            <h2>2. Sensitive macOS Permissions & Usage Reasons</h2>
+            <p>To deliver an instant radial action menu experience, WorkRing may request the following macOS system permissions. Each permission requires explicit user consent in macOS System Settings:</p>
+            <ul>
+                <li><strong>Accessibility (AX API)</strong>:
+                    <br><em>Purpose</em>: Used as an assistive navigation technology for users managing motor fatigue (RSI) and multitasking overload, dispatching predefined shortcut actions to the frontmost window and capturing mouse middle/side button triggers.
+                    <br><em>Compliance</em>: Completely local, sandboxed, and strictly confined to user-configured shortcut dispatching.
+                </li>
+                <li><strong>Screen Recording (Screen Capture API)</strong>:
+                    <br><em>Purpose</em>: Requested solely when you explicitly trigger the "Area Screenshot" or "Screen Capture" actions from the radial menu.
+                    <br><em>Compliance</em>: Background silent recording, periodic captures, and cloud synchronization are strictly prohibited.
+                </li>
+            </ul>
+
+            <h2>3. Local Storage & Data Deletion</h2>
+            <ul>
+                <li><strong>Storage Path</strong>: Custom wheel profiles, sector actions, and preferences are stored exclusively on your local Mac:
+                    <br><code>~/Library/Application Support/WorkRing/</code>
+                </li>
+                <li><strong>Data Deletion</strong>: You can clear any profile or reset sectors in Settings at any time. When you uninstall WorkRing and remove its application directory, all local data is permanently eradicated.</li>
+            </ul>
+
+            <h2>4. In-App Purchases & Apple StoreKit 2</h2>
+            <p>WorkRing Pro subscriptions and lifetime licenses are processed strictly through Apple In-App Purchase (StoreKit 2). Financial transactions are encrypted and managed entirely by Apple Inc. The developer has no access to your payment methods, credit card details, or billing addresses.</p>
+
+            <h2>5. Privacy Manifest (PrivacyInfo.xcprivacy)</h2>
+            <p>WorkRing bundles Apple's required <code>PrivacyInfo.xcprivacy</code> manifest, certifying <code>NSPrivacyTracking = false</code> and declaring approved reasons for local UserDefaults configuration storage.</p>
+
+            <h2>6. Developer Contact & Support</h2>
+            <p>If you have any questions or feedback regarding our privacy practices, please contact us:</p>
+            <ul>
+                <li><strong>Support Email</strong>: <a href="mailto:worktabs@outlook.com">worktabs@outlook.com</a></li>
+                <li><strong>GitHub Repository</strong>: <a href="https://github.com/2436cn/WorkRing" target="_blank">https://github.com/2436cn/WorkRing</a></li>
+            </ul>
+
+            <footer>
+                &copy; 2026 WorkRing Studio. All rights reserved.<br>
+                Compliant with Apple App Store Review Guidelines 5.1.1(i) and 3.1.2.
+            </footer>
+        </div>
+
+        <!-- 3. 日语版内容 (Japanese Version) -->
+        <div id="content-ja" class="lang-content">
+            <h1>WorkRing プライバシーポリシー</h1>
+            <div class="subtitle">発効日：2026年10月20日 | 最終更新日：2026年10月20日</div>
+
+            <div class="highlight-box">
+                <strong>基本方針：</strong> WorkRing は、100% デバイス上でローカル動作する macOS 向けの効率化・アシスティブナビゲーションツールです。個人情報の収集、キーストロークの記録、画面の外部送信、トラッキングなどは一切行いません。
+            </div>
+
+            <p><strong>WorkRing</strong>（以下「本アプリ」または「当方」）をご利用いただきありがとうございます。当方はユーザーの皆様のプライバシー保護を最重要事項と考えております。本ポリシーでは、本アプリにおけるデータの取り扱い、アクセス権限の利用目的、およびローカル保存についてご説明します。</p>
+
+            <h2>一、 データの収集と「ゼロプライバシー送信」原則</h2>
+            <ul>
+                <li><strong>個人を特定できる情報（PII）の不収集</strong>：お名前、電話番号、メールアドレス、連絡先リスト、位置情報、端末識別子などの個人情報を一切収集しません。</li>
+                <li><strong>キーストロークや入力履歴の非記録</strong>：ショートカットによるホイールメニューの呼び出しに対応していますが、入力された文字、パスワード、クリップボードの内容を監視・記録・保存・分析することは一切ありません。</li>
+                <li><strong>画面データの外部送信・クラウド連携の排除</strong>：内蔵の「範囲スクリーンショット」および「全画面スクリーンショット」は、macOS ネイティブ API のみを利用してローカルで完結し、クリップボードに直接保存されます。外部サーバーへの送信は一切行いません。</li>
+                <li><strong>サードパーティ製トラッカー・分析ツールの不使用</strong>：Google Analytics、Firebase などの外部分析・広告 SDK は一切組み込まれておらず、完全にクローズドで安全な環境を提供します。</li>
+            </ul>
+
+            <h2>二、 システム権限の要求および利用目的</h2>
+            <p>macOS 上で快適なラジアルメニュー体験を提供するため、本アプリは必要に応じて以下のシステム権限を要求します。すべての権限は Apple の公式ガイドラインに準拠し、システム設定にてユーザーご自身が明示的に許可した場合にのみ有効となります：</p>
+            <ul>
+                <li><strong>アクセシビリティ権限 (Accessibility API)</strong>：
+                    <br><em>利用目的</em>：操作疲労（RSI）の軽減や効率的なマルチタスク切り替えを支援するナビゲーション機能として、前面のアクティブなウィンドウへのショートカット操作の送信、およびマウス中ボタン・サイドボタンでのメニュー呼び出しに使用します。
+                    <br><em>準拠説明</em>：ローカルのサンドボックス環境内で制御され、無関係なバックグラウンドウィンドウの検知や列挙は一切行いません。
+                </li>
+                <li><strong>画面収録権限 (Screen Recording)</strong>：
+                    <br><em>利用目的</em>：ホイールメニューから「範囲スクリーンショット」または「全画面スクリーンショット」を明示的に実行した場合にのみ、指定された領域のピクセルを取得するために使用します。
+                    <br><em>準拠説明</em>：バックグラウンドでの無断録画、定期的なキャプチャ、クラウドへの同期などは一切行われません。
+                </li>
+            </ul>
+
+            <h2>三、 ローカルストレージとデータの削除</h2>
+            <ul>
+                <li><strong>保存場所</strong>：カスタムホイールプロファイル、ショートカット設定、各種環境設定は Mac ローカルにのみ保存されます：
+                    <br><code>~/Library/Application Support/WorkRing/</code>
+                </li>
+                <li><strong>データの削除</strong>：アプリ内の設定からいつでも設定をリセットまたは削除できます。Mac から本アプリおよびデータディレクトリを完全に削除すると、すべてのローカルデータは永久に消去されます。</li>
+            </ul>
+
+            <h2>四、 アプリ内課金と Apple StoreKit 2</h2>
+            <p>WorkRing Pro のサブスクリプションおよび買い切りライセンスは、すべて Apple 公式のアプリ内課金（In-App Purchase / StoreKit 2）を通じて処理されます。決済情報は Apple Inc. によって暗号化および管理されており、開発者がクレジットカード情報や請求先住所などの機密情報を取得することは一切ありません。</p>
+
+            <h2>五、 公式プライバシーマニフェスト (PrivacyInfo.xcprivacy)</h2>
+            <p>本アプリは Apple が義務付ける公式の <code>PrivacyInfo.xcprivacy</code> を同梱しており、<code>NSPrivacyTracking = false</code> を宣言し、追跡やフィンガープリンティング API を一切使用していないことを証明しています。</p>
+
+            <h2>六、 お問い合わせ窓口</h2>
+            <p>本プライバシーポリシーやデータセキュリティに関してご不明な点がございましたら、お気軽にお問い合わせください：</p>
+            <ul>
+                <li><strong>サポート窓口（メール）</strong>：<a href="mailto:worktabs@outlook.com">worktabs@outlook.com</a></li>
+                <li><strong>GitHub リポジトリ</strong>：<a href="https://github.com/2436cn/WorkRing" target="_blank">https://github.com/2436cn/WorkRing</a></li>
+            </ul>
+
+            <footer>
+                &copy; 2026 WorkRing Studio. All rights reserved.<br>
+                Apple App Store Review Guidelines 5.1.1(i) および 3.1.2 に準拠。
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+
+            if (lang === 'en') {
+                document.getElementById('content-en').classList.add('active');
+                document.getElementById('btn-en').classList.add('active');
+                document.documentElement.lang = 'en';
+            } else if (lang === 'ja') {
+                document.getElementById('content-ja').classList.add('active');
+                document.getElementById('btn-ja').classList.add('active');
+                document.documentElement.lang = 'ja';
+            } else {
+                document.getElementById('content-zh').classList.add('active');
+                document.getElementById('btn-zh').classList.add('active');
+                document.documentElement.lang = 'zh-CN';
+            }
+        }
+
+        // 浏览器语言自动检测 (Auto-detect browser preferred language)
+        (function() {
+            const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            if (userLang.startsWith('ja')) {
+                switchLang('ja');
+            } else if (userLang.startsWith('en')) {
+                switchLang('en');
+            } else {
+                switchLang('zh');
+            }
+        })();
+    </script>
+</body>
+</html>
